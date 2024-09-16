@@ -1,0 +1,14 @@
+<div>
+  <%= flash[:notice] %>
+</div>
+
+<p id="notice">Book was successfully created.</p>
+
+<h2>本のタイトル</h2>
+<p><%= @list.title %></p>
+
+<h2>感想</h2>
+<p><%= @list.body %></p>
+
+<%= link_to "edit", edit_book_path(@list.id) %>
+<%= link_to "back", books_path %>
